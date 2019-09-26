@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="96cb1f0b-1ffd-423d-a456-cae1749c201f" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1RMQawpJbOzzo9jQa5zFW0Y84PB" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.StringAccumulatorTest">
+    <configuration name="StringAccumulatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="string-accumulator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jy" />
+      <option name="MAIN_CLASS_NAME" value="com.jy.StringAccumulatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringAccumulatorTest.add_different_delimiters_multipleLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="string-accumulator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jy" />
+      <option name="MAIN_CLASS_NAME" value="com.jy.StringAccumulatorTest" />
+      <option name="METHOD_NAME" value="add_different_delimiters_multipleLength" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringAccumulatorTest.add_different_delimiters_semi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="string-accumulator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jy" />
+      <option name="MAIN_CLASS_NAME" value="com.jy.StringAccumulatorTest" />
+      <option name="METHOD_NAME" value="add_different_delimiters_semi" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringAccumulatorTest.add_different_delimiters_semi_star" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="string-accumulator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jy" />
+      <option name="MAIN_CLASS_NAME" value="com.jy.StringAccumulatorTest" />
+      <option name="METHOD_NAME" value="add_different_delimiters_semi_star" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringAccumulatorTest.test_split" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="string-accumulator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jy" />
+      <option name="MAIN_CLASS_NAME" value="com.jy.StringAccumulatorTest" />
+      <option name="METHOD_NAME" value="test_split" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StringAccumulatorTest" />
+        <item itemvalue="JUnit.StringAccumulatorTest.test_split" />
+        <item itemvalue="JUnit.StringAccumulatorTest.add_different_delimiters_multipleLength" />
+        <item itemvalue="JUnit.StringAccumulatorTest.add_different_delimiters_semi_star" />
+        <item itemvalue="JUnit.StringAccumulatorTest.add_different_delimiters_semi" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="96cb1f0b-1ffd-423d-a456-cae1749c201f" name="Default Changelist" comment="" />
+      <created>1569474551357</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569474551357</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
