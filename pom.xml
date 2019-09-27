@@ -54,7 +54,7 @@
           <configuration>
             <archive>
               <manifest>
-                <mainClass>com.jy.StringAccumulator</mainClass>
+                <mainClass>com.jy.StringCalculator</mainClass>
               </manifest>
             </archive>
           </configuration>

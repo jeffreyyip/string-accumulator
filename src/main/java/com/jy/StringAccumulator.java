@@ -14,6 +14,7 @@ public class StringAccumulator {
     private static final String DELIMITERS_SUFFIX = "\n";
     private static final String DELIMITERS_SEPARATOR = "|";
     private static final String REGEX_OR = "|";
+    private static final int MAX_INT_VALUE = 1000;
 
 
     private static String[] parseDelimitors(String delimiterAndNumbers){
@@ -82,30 +83,21 @@ public class StringAccumulator {
         return delimiterAndNumbers.substring(newlineIndex+1);
     }
 
+
     private static int sumIgnoreOverThousand(String[] numbers){
-        //System.out.println("=== sumStream ===");
-
-        return Arrays.asList(numbers).parallelStream().mapToInt( Integer::parseInt).filter( i -> i <= 1000).sum();
-    }
-
-    /*
-    private static int sumLoop(String[] numbers){
-        System.out.println("=== sumLoop ===");
         int result = 0;
         int n;
 
         for (String s : numbers){
              n = Integer.parseInt(s);
 
-             if (n <= 1000 ){
+             if (n <= MAX_INT_VALUE ){
                  result += n;
              }
         }
 
         return result;
     }
-
-     */
 
     private static boolean startWithDelimiters(String delimiterAndNumbers){
         return delimiterAndNumbers.startsWith(DELIMITERS_PREFIX) && delimiterAndNumbers.contains(DELIMITERS_SUFFIX);
