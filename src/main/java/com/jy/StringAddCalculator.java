@@ -1,12 +1,15 @@
 package com.jy;
 
+import com.google.common.base.Splitter;
+
 import java.util.*;
 import java.util.concurrent.ConcurrentMap;
+import java.util.regex.Pattern;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class StringCalculator {
+public class StringAddCalculator {
 
     private static final String COMMAS = ",";
     private static final String RETURN = "\n";
@@ -15,10 +18,8 @@ public class StringCalculator {
     private static final String DELIMITERS_SUFFIX = "\n";
     private static final String DELIMITERS_SEPARATOR = "|";
     private static final String REGEX_OR = "|";
-    private static final String REGEX_ESCAPE = "\\";
     private static final char REGEX_ESCAPE_CHAR = '\\';
     private static final Set<Character> REGEX_META_SET = new HashSet<>(Arrays.asList('*', '|'));
-    private static final Set<String> REGEX_META_SET_STR = new HashSet<>(Arrays.asList("*", "|"));
 
     private static final int MAX_INT_VALUE = 1000;
     private static final String EXP_MSG_NEG = "negatives not allowed";
@@ -33,7 +34,7 @@ public class StringCalculator {
         int suffixIndex = delimiterAndNumbers.indexOf(DELIMITERS_SUFFIX);
         String delimiterStr = delimiterAndNumbers.substring(DELIMITERS_PREFIX.length() , suffixIndex);
 
-        return Arrays.asList(delimiterStr.split(escapeRegex(DELIMITERS_SEPARATOR)));
+        return Splitter.on(Pattern.compile(escapeRegex(DELIMITERS_SEPARATOR))).splitToList(delimiterStr);
     }
 
 
@@ -44,7 +45,7 @@ public class StringCalculator {
      */
     private static String[] escapeRegex(List<String> delimiters){
 
-        return delimiters.stream().map(StringCalculator::escapeRegex).toArray(String[]::new);
+        return delimiters.stream().map(StringAddCalculator::escapeRegex).toArray(String[]::new);
 
     }
 
@@ -117,9 +118,9 @@ public class StringCalculator {
                                 delimiters.addAll( DEFAULTS_DELIMITER_LIST);
                                 return delimiterAndNumbers;
                             } })
-                .flatMap( delimNums -> Stream.of(delimNums.split(String.join(REGEX_OR, escapeRegex(delimiters)))))
-                .map(Integer::valueOf)
-                .collect(Collectors.groupingByConcurrent( i -> i >= 0));
+                        .flatMap( delimNums -> Stream.of( Splitter.on(Pattern.compile(String.join(REGEX_OR, escapeRegex(delimiters)))).splitToList(delimNums).toArray(new String[0]) ) )
+                        .map(Integer::valueOf)
+                        .collect(Collectors.groupingByConcurrent(i -> i >= 0));
 
         if (positiveNegativeMap.get(Boolean.FALSE) != null){
             throw new Exception(EXP_MSG_NEG + " " + positiveNegativeMap.get(Boolean.FALSE));
